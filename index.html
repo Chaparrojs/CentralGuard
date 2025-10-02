@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguridad TechJS - CCTV y Mantenimiento de Computadores</title>
+    <title>CentralGuard Studio - CCTV y Mantenimiento de Computadores</title>
     <style>
         * {
             margin: 0;
@@ -65,7 +64,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.1&auto=format&fit=crop&w=1950&q=80');
+                        url('https://pctecnologia.net/wp-content/uploads/2023/07/cctv-768x512.jpeg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -179,49 +178,61 @@
             border-radius: 10px;
         }
 
-        /* Contact Section */
-        .contact {
+        /* WhatsApp Contact Section */
+        .whatsapp-contact {
             padding: 5rem 2rem;
-            max-width: 800px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .whatsapp-container {
+            max-width: 600px;
             margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .contact-form {
-            display: grid;
-            gap: 1rem;
+        .whatsapp-icon {
+            font-size: 4rem;
+            color: #25D366;
+            margin-bottom: 1rem;
         }
 
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .submit-btn {
-            background: #4CAF50;
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            background: #25D366;
             color: white;
-            padding: 1rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
         }
 
-        .submit-btn:hover {
-            background: #45a049;
+        .whatsapp-button:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
         }
 
         /* Footer */
@@ -256,14 +267,20 @@
             .hero-content p {
                 font-size: 1.1rem;
             }
+
+            .whatsapp-container {
+                padding: 2rem 1.5rem;
+            }
         }
     </style>
+    <!-- Agregar Font Awesome para el ícono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="nav-container">
-            <div class="logo">Seguridad Tech</div>
+            <div class="logo">CentralGuard Studio</div>
             <nav>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -275,34 +292,40 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <h1>Seguridad y Tecnología en un Solo Lugar</h1>
-            <p>Instalación profesional de CCTV y mantenimiento preventivo de computadores</p>
-            <a href="#contacto" class="cta-button">Solicitar Cotización</a>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section class="services" id="servicios">
         <h2 class="section-title">Nuestros Servicios</h2>
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="Instalación de CCTV">
                 <h3>Instalación de CCTV</h3>
-                <p>Sistemas de circuito cerrado de televisión profesional para hogares y empresas.</p>
+                <p>Sistemas de circuito cerrado de televisión profesional para hogares y empresas, fincas, almacenes.</p>
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_645369-MCO93032060334_092025-T.webp" alt="Instalación de CCTV">
+                <img src="https://eviterobos.es/modules/ph_simpleblog/featured/42.jpg" alt="Instalación de CCTV">
+                <img src="https://i.ytimg.com/vi/8JQE6ZrYZQI/maxresdefault.jpg" alt="Instalación de CCTV">
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="Mantenimiento de computadores">
                 <h3>Mantenimiento de Computadores</h3>
-                <p>Limpieza, optimización y reparación de equipos de cómputo.</p>
+                <p>Limpieza, optimización y reparación de equipos de cómputo, instalación de programas.</p>
+                <img src="https://us.123rf.com/450wm/vadimgozhda/vadimgozhda1812/vadimgozhda181200350/113610107-dos-hombres-con-placas-base-y-herramientas-sobre-mesa-de-madera-concepto-de-taller-moderno.jpg?ver=6" alt="Mantenimiento de computadores">
+                <img src="https://sofmat.com.bo/wp-content/uploads/2021/05/Actualizacion-de-memoria-pc.jpg" alt="Mantenimiento de computadores">
+                <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/07/183784-como-formatear-tu-pc.jpg?tf=3840x" alt="Mantenimiento de computadores">
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="Central de monitoreo">
                 <h3>Centrales de Monitoreo</h3>
                 <p>Monitoreo 24/7 de sus sistemas de seguridad con respuesta inmediata.</p>
+                <img src="https://orienteseperiodismodeopinion.com/id-cms/wp-content/uploads/2023/05/306A9785.jpg" alt="Central de monitoreo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvKsWYgOZ6AH2G6gIcZzcs_WOeJa1c_9pdMA&s" alt="Central de monitoreo">
+                <img src="https://i.ytimg.com/vi/It0ZxiFbEiA/maxresdefault.jpg" alt="Central de monitoreo">
             </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Seguridad y Tecnología en un Solo Lugar</h1>
+            <p>Instalación profesional de CCTV y mantenimiento preventivo de computadores</p>
+            <a href="#contacto" class="cta-button">Contáctanos por WhatsApp</a>
         </div>
     </section>
 
@@ -341,43 +364,31 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contacto">
-        <h2 class="section-title">Contáctenos</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+    <!-- WhatsApp Contact Section -->
+    <section class="whatsapp-contact" id="contacto">
+        <div class="whatsapp-container">
+            <div class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <h2 class="section-title">Contáctanos por WhatsApp</h2>
+            <p>Estamos listos para atenderte y resolver todas tus dudas sobre nuestros servicios de seguridad y mantenimiento.</p>
+            
+            <!-- REEMPLAZA EL NÚMERO AQUÍ -->
+            <a href="https://wa.me/3115311130?text=Hola%20CentralGuard%20Studio,%20me%20interesan%20sus%20servicios" 
+               class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+            </a>
+            
+            <div class="contact-info">
+                <p><strong>Horario de atención:</strong> Lunes a Viernes 8:00 AM - 6:00 PM</p>
+                <p><strong>Respuesta inmediata:</strong> Te atenderemos en menos de 5 minutos</p>
             </div>
-            <div class="form-group">
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="service">Servicio de interés:</label>
-                <select id="service" name="service">
-                    <option value="cctv">Instalación de CCTV</option>
-                    <option value="mantenimiento">Mantenimiento de Computadores</option>
-                    <option value="monitoreo">Central de Monitoreo</option>
-                    <option value="otros">Otros</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Enviar Mensaje</button>
-        </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Seguridad Tech. Todos los derechos reservados.</p>
-        <p>Instalación de CCTV y Mantenimiento de Computadores</p>
+        <p>&copy; 2024 CentralGuard Studio. Todos los derechos reservados.</p>
     </footer>
 
     <script>
@@ -394,13 +405,6 @@
             });
         });
 
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por su mensaje! Nos pondremos en contacto pronto.');
-            this.reset();
-        });
-
         // Header background on scroll
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
@@ -412,5 +416,4 @@
         });
     </script>
 </body>
-
 </html>
